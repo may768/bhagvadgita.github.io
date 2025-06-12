@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhagavad Gita Chapters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <header>
+    <div class="gita-cover">
+  <img src="bg.jpg" alt="Bhagavad Gita Cover">
+</div>
+
+    <h1>Bhagavad Gita</h1>
+    <p>Exploring All 18 Chapters</p>
+  </header>
+  <button id="chantToggle" onclick="toggleChant()" title="Toggle Chanting">
+  🔔
+</button>
+
+  <div class="om-symbol"></div>
+  <div class="chapter-buttons">
+    <!-- Auto-generate 18 chapter buttons -->
+    <script>
+      for (let i = 1; i <= 18; i++) {
+        document.write(`<button onclick="loadChapter(${i})">Chapter ${i}</button>`);
+      }
+    </script>
+  </div>
+
+  <main id="chapter-content">
+    <h2>Welcome</h2>
+    <p>Select a chapter to view its teachings.</p>
+  </main>
+<footer class="footer">
+  <p>© 2025 All rights reserved | Contact: <a href="mailto:mayankchitra3@gmail.com">mayankchitra3@gmail.com</a></p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
