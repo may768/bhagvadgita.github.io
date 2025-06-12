@@ -1,0 +1,360 @@
+/* Global spiritual font and background */
+body {
+  font-family: 'Georgia', serif;
+  background: radial-gradient(circle at top, #fffbe6, #fff0e0, #ffe0c0);
+  color: #4b2e14;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(to right, #ffd700, #ffcc00, #f4a460);
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 20px gold;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #6b3e26;
+  text-shadow: 0 0 10px gold;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4b2e14;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #d4a017;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px #ffcc00;
+}
+
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.chapter-list li {
+  margin: 0.4rem 0;
+  color: #7a501e;
+}
+
+blockquote {
+  background: #fff8e1;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-left: 5px solid #ffb300;
+  box-shadow: 0 0 10px #ffeb99;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: #4b2e14;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #f9f7f3, #f3e5ab);
+  color: #333;
+}
+
+header {
+  background: #f4c430;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.chapter-buttons {
+  text-align: center;
+  padding: 1rem;
+}
+
+.chapter-buttons button {
+  margin: 0.3rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 16px;
+  background: #fff;
+  border: 2px solid #f4c430;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chapter-buttons button:hover {
+  background: #f4c430;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #fff6d5;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+/* Spiritual floating particles */
+.spirit-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.spirit {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, gold, transparent);
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, rgba(255,215,0,0.1), transparent 60%);
+  z-index: -1;
+}
+.om-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.om-symbol {
+  position: absolute;
+  font-size: 24px;
+  color: gold;
+  font-family: 'Georgia', serif;
+  opacity: 0.8;
+  animation: riseOm 10s linear infinite;
+}
+
+@keyframes riseOm {
+  0% {
+    transform: translateY(100vh) scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.2) rotate(360deg);
+    opacity: 0;
+  }
+}
+#chantToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  color: #4b2e00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gold;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background 0.3s ease;
+}
+
+#chantToggle:hover {
+  background: orange;
+  box-shadow: 0 0 20px orange;
+}
+#chantToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  color: #4b2e00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gold;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background 0.3s ease;
+}
+#chantToggle:hover {
+  background: orange;
+  box-shadow: 0 0 20px orange;
+}
+#chantToggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: goldenrod;
+  transition: transform 0.2s ease;
+}
+
+#chantToggle:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+.gita-cover {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gita-cover img {
+  max-width: 300px;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.gita-cover img:hover {
+  transform: scale(1.05);
+}
+.footer {
+  text-align: center;
+  background-color: #f9e79f;
+  color: #6e3b0c;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 2px solid #e0c97f;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #6e3b0c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.pdf-download, .pdf-button {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #6e3b0c;
+  padding: 10px 20px;
+  margin: 15px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.pdf-download:hover, .pdf-button:hover {
+  background-color: #ffcc00;
+}
+.yellow-section {
+  background: #f6c700;
+  text-align: left;
+  padding: 40px 20px;
+  color: #442200;
+  position: relative;
+}
+
+.pdf-button {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+  max-width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.download-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffd700;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Make it stack under header on small screens */
+@media (max-width: 768px) {
+  .download-btn {
+    position: static;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: fit-content;
+  }
+}
